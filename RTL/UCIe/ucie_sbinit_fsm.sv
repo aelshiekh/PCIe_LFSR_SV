@@ -29,7 +29,7 @@
 // =============================================================================
 
 module ucie_ltsm #(
-    parameter int NUM_LANES        = 16,   // IMPL-DEFINED: module width
+    parameter int NUM_LANES        = 64,   // IMPL-DEFINED: module width
     parameter int TIMEOUT_SBINIT   = 32'd100_000,  // IMPL-DEFINED placeholder
     parameter int TIMEOUT_MBINIT   = 32'd200_000,  // IMPL-DEFINED placeholder
     parameter int TIMEOUT_MBTRAIN  = 32'd500_000,  // IMPL-DEFINED placeholder
