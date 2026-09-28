@@ -1,4 +1,4 @@
-`include "crc_config.svh"
+`include "../rtl/crc_config.svh"
 import crc_pkg::*;
 
 // -----------------------------------------------------------------------------

@@ -1,14 +1,18 @@
-if {![file exists work]} {
-    vlib work
+# Start from a clean library every run
+if {[file exists work]} {
+    vdel -lib work -all
 }
-
+vlib work
 vmap work work
 
+# Pick ONE configuration (one line each, no trailing backslashes)
+# set defs {+define+CRC_1024}
+set defs {+define+CRC_1024 +define+CRC_USE_SPLIT}
+# set defs {+define+CRC_512}
+# set defs {+define+CRC_512 +define+CRC_USE_SPLIT}
+
 # Compile RTL + testbench
-#vlog +define+CRC_512 \
-#vlog +define+CRC_1024 \
-vlog +define+CRC_1024 +define+CRC_1024_SPLIT \
-    +incdir+rtl \
+vlog {*}$defs +incdir+rtl \
     rtl/crc_pkg.sv \
     rtl/crc_calculator.sv \
     rtl/crc_dut.sv \
