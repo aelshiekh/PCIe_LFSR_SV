@@ -1,0 +1,1 @@
+`define DATA_PATH_WIDTH 1024
