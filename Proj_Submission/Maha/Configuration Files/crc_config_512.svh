@@ -1,0 +1,3 @@
+`define INPUT_DATA_BUS_WIDTH 512
+
+`define NO_OF_CYCLES_PER_FLIT 4

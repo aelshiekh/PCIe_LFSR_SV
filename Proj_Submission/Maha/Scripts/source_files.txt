@@ -1,0 +1,8 @@
+crc_config_1024.svh
+crc_config_512.svh
+crc_config.svh
+crc_golden_model.sv
+crc_calc.sv
+crc_pkg.sv
+crc.sv
+crc_tb.sv
